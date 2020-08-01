@@ -103,11 +103,11 @@
             // 
             this.textUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.textUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textUserName.Font = new System.Drawing.Font("Antonio", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textUserName.Font = new System.Drawing.Font("Arial", 15.2F, System.Drawing.FontStyle.Bold);
             this.textUserName.ForeColor = System.Drawing.Color.White;
             this.textUserName.Location = new System.Drawing.Point(163, 228);
             this.textUserName.Name = "textUserName";
-            this.textUserName.Size = new System.Drawing.Size(383, 32);
+            this.textUserName.Size = new System.Drawing.Size(383, 30);
             this.textUserName.TabIndex = 11;
             this.textUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -115,11 +115,11 @@
             // 
             this.textPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.textPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textPassword.Font = new System.Drawing.Font("Antonio", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPassword.Font = new System.Drawing.Font("Arial", 15.2F, System.Drawing.FontStyle.Bold);
             this.textPassword.ForeColor = System.Drawing.Color.White;
             this.textPassword.Location = new System.Drawing.Point(163, 289);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(383, 32);
+            this.textPassword.Size = new System.Drawing.Size(383, 30);
             this.textPassword.TabIndex = 13;
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textPassword.UseSystemPasswordChar = true;

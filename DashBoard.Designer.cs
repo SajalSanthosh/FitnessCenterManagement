@@ -29,12 +29,17 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnAbout = new System.Windows.Forms.Button();
+            this.btnReporting = new System.Windows.Forms.Button();
+            this.btnMembers = new System.Windows.Forms.Button();
+            this.btnAddNew = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.bntMinimize = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,11 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCloseChildForm = new System.Windows.Forms.Button();
-            this.btnAbout = new System.Windows.Forms.Button();
-            this.btnReporting = new System.Windows.Forms.Button();
-            this.btnMembers = new System.Windows.Forms.Button();
-            this.btnAddNew = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -68,6 +68,82 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 550);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAbout.Image = global::TicketReservationSystem.Properties.Resources.baseline_info_white_18dp;
+            this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbout.Location = new System.Drawing.Point(0, 260);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnAbout.Size = new System.Drawing.Size(220, 60);
+            this.btnAbout.TabIndex = 6;
+            this.btnAbout.Text = "   About";
+            this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnReporting
+            // 
+            this.btnReporting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReporting.FlatAppearance.BorderSize = 0;
+            this.btnReporting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporting.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnReporting.Image = global::TicketReservationSystem.Properties.Resources.baseline_analytics_white_18dp;
+            this.btnReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReporting.Location = new System.Drawing.Point(0, 200);
+            this.btnReporting.Name = "btnReporting";
+            this.btnReporting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnReporting.Size = new System.Drawing.Size(220, 60);
+            this.btnReporting.TabIndex = 5;
+            this.btnReporting.Text = "   Reporting";
+            this.btnReporting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReporting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReporting.UseVisualStyleBackColor = true;
+            this.btnReporting.Click += new System.EventHandler(this.btnReporting_Click_1);
+            // 
+            // btnMembers
+            // 
+            this.btnMembers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMembers.FlatAppearance.BorderSize = 0;
+            this.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMembers.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMembers.Image = global::TicketReservationSystem.Properties.Resources.baseline_supervisor_account_white_18dp;
+            this.btnMembers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMembers.Location = new System.Drawing.Point(0, 140);
+            this.btnMembers.Name = "btnMembers";
+            this.btnMembers.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnMembers.Size = new System.Drawing.Size(220, 60);
+            this.btnMembers.TabIndex = 3;
+            this.btnMembers.Text = "   Members";
+            this.btnMembers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMembers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMembers.UseVisualStyleBackColor = true;
+            this.btnMembers.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
+            // btnAddNew
+            // 
+            this.btnAddNew.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddNew.FlatAppearance.BorderSize = 0;
+            this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNew.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAddNew.Image = global::TicketReservationSystem.Properties.Resources.baseline_add_box_white_18dp;
+            this.btnAddNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNew.Location = new System.Drawing.Point(0, 80);
+            this.btnAddNew.Name = "btnAddNew";
+            this.btnAddNew.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnAddNew.Size = new System.Drawing.Size(220, 60);
+            this.btnAddNew.TabIndex = 1;
+            this.btnAddNew.Text = "   Add New";
+            this.btnAddNew.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddNew.UseVisualStyleBackColor = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // panelLogo
             // 
@@ -150,6 +226,19 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnCloseChildForm
+            // 
+            this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
+            this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseChildForm.Image = global::TicketReservationSystem.Properties.Resources.cross_out__2_;
+            this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
+            this.btnCloseChildForm.Name = "btnCloseChildForm";
+            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
+            this.btnCloseChildForm.TabIndex = 1;
+            this.btnCloseChildForm.UseVisualStyleBackColor = true;
+            this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
+            // 
             // lblTitle
             // 
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -180,11 +269,11 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Antonio", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(918, 347);
+            this.label6.Location = new System.Drawing.Point(875, 348);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 29);
+            this.label6.Size = new System.Drawing.Size(114, 24);
             this.label6.TabIndex = 14;
             this.label6.Text = "Dona Dona";
             // 
@@ -192,11 +281,11 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Antonio", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(917, 315);
+            this.label5.Location = new System.Drawing.Point(874, 316);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 29);
+            this.label5.Size = new System.Drawing.Size(114, 24);
             this.label5.TabIndex = 13;
             this.label5.Text = "Hang Dang";
             // 
@@ -204,11 +293,11 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Antonio", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(917, 285);
+            this.label4.Location = new System.Drawing.Point(874, 286);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 29);
+            this.label4.Size = new System.Drawing.Size(151, 24);
             this.label4.TabIndex = 12;
             this.label4.Text = "Sajal Santhosh";
             // 
@@ -216,11 +305,11 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Antonio", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(781, 285);
+            this.label3.Location = new System.Drawing.Point(704, 286);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 29);
+            this.label3.Size = new System.Drawing.Size(153, 24);
             this.label3.TabIndex = 11;
             this.label3.Text = "Developed By :";
             // 
@@ -249,95 +338,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(1068, 77);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnCloseChildForm
-            // 
-            this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
-            this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseChildForm.Image = global::TicketReservationSystem.Properties.Resources.cross_out__2_;
-            this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
-            this.btnCloseChildForm.Name = "btnCloseChildForm";
-            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
-            this.btnCloseChildForm.TabIndex = 1;
-            this.btnCloseChildForm.UseVisualStyleBackColor = true;
-            this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
-            // 
-            // btnAbout
-            // 
-            this.btnAbout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAbout.FlatAppearance.BorderSize = 0;
-            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAbout.Image = global::TicketReservationSystem.Properties.Resources.baseline_info_white_18dp;
-            this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.Location = new System.Drawing.Point(0, 260);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAbout.Size = new System.Drawing.Size(220, 60);
-            this.btnAbout.TabIndex = 6;
-            this.btnAbout.Text = "   About";
-            this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAbout.UseVisualStyleBackColor = true;
-            this.btnAbout.Click += new System.EventHandler(this.btnSetting_Click);
-            // 
-            // btnReporting
-            // 
-            this.btnReporting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReporting.FlatAppearance.BorderSize = 0;
-            this.btnReporting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporting.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnReporting.Image = global::TicketReservationSystem.Properties.Resources.baseline_analytics_white_18dp;
-            this.btnReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReporting.Location = new System.Drawing.Point(0, 200);
-            this.btnReporting.Name = "btnReporting";
-            this.btnReporting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnReporting.Size = new System.Drawing.Size(220, 60);
-            this.btnReporting.TabIndex = 5;
-            this.btnReporting.Text = "   Reporting";
-            this.btnReporting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReporting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReporting.UseVisualStyleBackColor = true;
-            this.btnReporting.Click += new System.EventHandler(this.btnReporting_Click_1);
-            // 
-            // btnMembers
-            // 
-            this.btnMembers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMembers.FlatAppearance.BorderSize = 0;
-            this.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMembers.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMembers.Image = global::TicketReservationSystem.Properties.Resources.baseline_supervisor_account_white_18dp;
-            this.btnMembers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMembers.Location = new System.Drawing.Point(0, 140);
-            this.btnMembers.Name = "btnMembers";
-            this.btnMembers.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnMembers.Size = new System.Drawing.Size(220, 60);
-            this.btnMembers.TabIndex = 3;
-            this.btnMembers.Text = "   Members";
-            this.btnMembers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMembers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMembers.UseVisualStyleBackColor = true;
-            this.btnMembers.Click += new System.EventHandler(this.btnCustomer_Click);
-            // 
-            // btnAddNew
-            // 
-            this.btnAddNew.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddNew.FlatAppearance.BorderSize = 0;
-            this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNew.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAddNew.Image = global::TicketReservationSystem.Properties.Resources.baseline_add_box_white_18dp;
-            this.btnAddNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNew.Location = new System.Drawing.Point(0, 80);
-            this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAddNew.Size = new System.Drawing.Size(220, 60);
-            this.btnAddNew.TabIndex = 1;
-            this.btnAddNew.Text = "   Add New";
-            this.btnAddNew.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddNew.UseVisualStyleBackColor = true;
-            this.btnAddNew.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // DashBoard
             // 
