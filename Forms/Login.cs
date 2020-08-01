@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TicketReservationSystem.Utils;
 
 namespace TicketReservationSystem.Forms
 {
@@ -46,7 +47,7 @@ namespace TicketReservationSystem.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\MyPrograms\TicketReservationSystem\bin\Debug\TicketReservation.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection sqlcon = new SqlConnection(DB.dbString);
             string query = "Select * from tbl_logins where username = '" + textUserName.Text.Trim() + "' and password = '" + textPassword.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dtbl = new DataTable();
